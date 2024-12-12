@@ -10,7 +10,22 @@ import SwiftUI
 struct FavouriteThingsView: View {
     var body: some View {
         NavigationStack {
-            Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+            VStack {
+                HStack {
+                    Image("BlueJays")
+                        .resizable()
+                        .scaledToFill()
+                        .frame(width: 50, height: 50, alignment: .center)
+                        .clipped()
+                    VStack {
+                        Text("")
+                            .font(.system(size: 30.0, weight: .bold, design: .default))
+                        Text("")
+                            .font(.system(size: 20.0, weight: .regular, design: .default))
+                    }
+                    Spacer()
+                }
+            }
                 .navigationTitle("My Favourite Things")
                 .toolbar {
                 }
