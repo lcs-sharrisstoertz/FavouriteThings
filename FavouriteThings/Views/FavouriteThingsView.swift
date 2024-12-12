@@ -12,7 +12,7 @@ struct FavouriteThingsView: View {
         NavigationStack {
             VStack {
                 HStack {
-                    Image("BlueJays")
+                    Image("Raindrops on Roses")
                         .resizable()
                         .scaledToFill()
                         .frame(width: 50, height: 50, alignment: .center)

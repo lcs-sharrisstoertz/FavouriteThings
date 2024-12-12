@@ -65,7 +65,6 @@
 				262DDBF02D0A833900A13843 /* Views */,
 				262DDBE72D0A830A00A13843 /* Preview Content */,
 				262DDBE82D0A830A00A13843 /* Assets.xcassets */,
-				262DDBE92D0A830A00A13843 /* ContentView.swift */,
 			);
 			path = FavouriteThings;
 			sourceTree = "<group>";
@@ -74,6 +73,7 @@
 			isa = PBXGroup;
 			children = (
 				262DDBF12D0A83E200A13843 /* FavouriteThingsView.swift */,
+				262DDBE92D0A830A00A13843 /* ContentView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
