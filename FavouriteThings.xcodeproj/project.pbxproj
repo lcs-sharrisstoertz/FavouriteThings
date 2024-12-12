@@ -12,6 +12,7 @@
 		262DDBEE2D0A830A00A13843 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 262DDBE62D0A830A00A13843 /* Preview Assets.xcassets */; };
 		262DDBEF2D0A830A00A13843 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 262DDBE82D0A830A00A13843 /* Assets.xcassets */; };
 		262DDBF22D0A83E200A13843 /* FavouriteThingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262DDBF12D0A83E200A13843 /* FavouriteThingsView.swift */; };
+		262DDBF82D0A91A400A13843 /* ThingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262DDBF72D0A91A400A13843 /* ThingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,7 +22,16 @@
 		262DDBE92D0A830A00A13843 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		262DDBEA2D0A830A00A13843 /* FavouriteThingsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteThingsApp.swift; sourceTree = "<group>"; };
 		262DDBF12D0A83E200A13843 /* FavouriteThingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteThingsView.swift; sourceTree = "<group>"; };
+		262DDBF72D0A91A400A13843 /* ThingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		262DDBF92D0A96CA00A13843 /* Model */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		262DDBC72D0A825300A13843 /* Frameworks */ = {
@@ -62,6 +72,7 @@
 			isa = PBXGroup;
 			children = (
 				262DDBEA2D0A830A00A13843 /* FavouriteThingsApp.swift */,
+				262DDBF92D0A96CA00A13843 /* Model */,
 				262DDBF02D0A833900A13843 /* Views */,
 				262DDBE72D0A830A00A13843 /* Preview Content */,
 				262DDBE82D0A830A00A13843 /* Assets.xcassets */,
@@ -73,6 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				262DDBF12D0A83E200A13843 /* FavouriteThingsView.swift */,
+				262DDBF72D0A91A400A13843 /* ThingView.swift */,
 				262DDBE92D0A830A00A13843 /* ContentView.swift */,
 			);
 			path = Views;
@@ -92,6 +104,9 @@
 			buildRules = (
 			);
 			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				262DDBF92D0A96CA00A13843 /* Model */,
 			);
 			name = FavouriteThings;
 			packageProductDependencies = (
@@ -154,6 +169,7 @@
 				262DDBF22D0A83E200A13843 /* FavouriteThingsView.swift in Sources */,
 				262DDBEC2D0A830A00A13843 /* ContentView.swift in Sources */,
 				262DDBED2D0A830A00A13843 /* FavouriteThingsApp.swift in Sources */,
+				262DDBF82D0A91A400A13843 /* ThingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
