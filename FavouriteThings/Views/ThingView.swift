@@ -12,24 +12,22 @@ import SwiftUI
 struct ThingView: View {
     
     // MARK: Stored properties
-    let image: String
-    let name: String
-    let description: String
-    
+    let providedFavouriteThing: FavouriteThing
+
     
     // MARK: Computed property
     var body: some View {
         HStack {
-            Image(image)
+            Image(providedFavouriteThing.image)
                 .resizable()
                 .scaledToFill()
                 .frame(width: 100, height: 100, alignment: .center)
                 .clipped()
                 .padding(EdgeInsets(top: 5, leading: 0, bottom: 5, trailing: 5))
             VStack(alignment: .leading) {
-                Text(name)
+                Text(providedFavouriteThing.name)
                     .font(.system(size: 20.0, weight: .bold, design: .default))
-                Text(description)
+                Text(providedFavouriteThing.description)
                     .font(.system(size: 15.0, weight: .regular, design: .default))
             }
         }

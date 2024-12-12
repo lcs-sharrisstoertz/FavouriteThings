@@ -10,14 +10,7 @@ import SwiftUI
 struct FavouriteThingsView: View {
     var body: some View {
         NavigationStack {
-            List {
-                ThingView(image: "Raindrops on Roses", name: "Raindrops on Roses", description: "One of my favourite times of year is the spring when flowers are starting to bloom everywhere and it's always raining. Seeing flowers with raindrops on their petals is one of my favourite things!")
-                ThingView(image: "Whiskers on Kittens", name: "Whiskers on Kittens", description: "I love animals, especially kittens. When I was little I had a kitten that looked similar to the one in the photo with these ridiculously long whiskers and I thought it was so adorable.")
-                ThingView(image: "Bright Copper Kettles", name: "Bright Copper Kettles", description: "My family has a woodstove that we keep going in the winter. We used to always have a copper kettle sitting on it. I don't think we ever actually used it but it looked pretty at least!")
-                ThingView(image: "Warm Woolen Mittens", name: "Warm Woolen Mittens", description: "I'll admit that I hated mittens when I was little. I always wanted to wear gloves. Recently though, I've grown a new appreciation for warm mittens in the winter.")
-                ThingView(image: "Brown Paper Packages Tied Up With String", name: "Brown Paper Packages Tied Up With String", description: "For as long as I can remember, my grandma has sent us a big package wrapped in brown paper and tied up with string for Christmas. I think of her every time I see a package like this. For some reason this feels like Christmas to me.")
-                ThingView(image: "Cream Coloured Ponies", name: "Cream Coloured Ponies", description: "Nothing feels more like a childhood road trip to me than spotting horses in fields out the window.")
-                ThingView(image: "Crisp Apple Strudel", name: "Crisp Apple Strudel", description: "These are one of my favourite deserts! I remember trying to make them with my siblings when I was little. Once we went to Germany and we had some incredible apple strudels in a little vilage there. It was by far my favourite place I've ever been to.")
+            List(favouriteThings) { currentFavouriteThing in ThingView(providedFavouriteThing: currentFavouriteThing)
             }
             .listStyle(.plain)
             .navigationTitle("My Favourite Things")

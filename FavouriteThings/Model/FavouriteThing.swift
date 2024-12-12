@@ -9,8 +9,8 @@ import Foundation
 
 
 // Define the structure
-struct FavouriteThing {
-    
+struct FavouriteThing: Identifiable {
+    let id = UUID()
     let image: String
     let name: String
     let description: String
@@ -26,5 +26,4 @@ let creamColouredPonies = FavouriteThing(image: "Cream Coloured Ponies", name: "
 let crispAppleStrudel = FavouriteThing(image: "Crisp Apple Strudel", name: "Crisp Apple Strudel", description: "These are one of my favourite deserts! I remember trying to make them with my siblings when I was little. Once we went to Germany and we had some incredible apple strudels in a little vilage there. It was by far my favourite place I've ever been to.")
 
 // Create an array to hold all the instances
-
 let favouriteThings = [raindropsOnRoses, whiskersOnKittens, brightCopperKettles, warmWoolenMittens, brownPaperPackagesTiedUpWithString, creamColouredPonies, crispAppleStrudel]
