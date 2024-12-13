@@ -34,4 +34,3 @@ struct ThingView: View {
     }
 }
 
-//"One of my favourite times of year is the spring when flowers are starting to bloom everywhere and it's always raining. Seeing flowers with raindrops on their petals is one of my favourite things!"
